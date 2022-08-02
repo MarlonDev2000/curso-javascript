@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f0f0f0; 
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .us-simbolo {
+  margin-top: 150px;
+}
+
+.container .us-simbolo h1 {
+  color: rgba(9,9,121);;
+  font-size: 38px;
+}
+
+.container .us-simbolo .simbolo {
+  font-size: 250px;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.container .conversor {
+  margin: 76px 18px 10px 18px;
+  display: flex;
+}
+
+.container .conversor .simboloDaMoeda {
+  font-size: 72px;
+  color: #d8d8d8;
+  user-select: none;
+  font-family: serif;
+}
+
+.moeda {
+  display: flex;
+  align-items: center;
+}
+
+.moeda:hover {
+  background-color: rgba(9,9,121);
+}
+
+.conversao {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px 10px;
+  color: rgba(9,9,121);
+  font-weight: bold;
+}
+
+#estrangeira, #nacional {
+  border: 0;
+  color: #909090;
+  background-color: transparent;
+  margin-left: 5px;
+  text-align: right;
+  padding: 15px;
+  font-size: 30px;
+  border-radius: 6px;
+  width: 165px;
+  font-family: serif;
+  transition: 1s;
+  font-size: 56px;
+  -webkit-user-select: all;
+  user-select: all;
+}
+
+

@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.game-board {
+  width: 100%;
+  height: 80vh;
+  border-bottom: 15px solid rgb(133, 221, 124);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../images/background.jpg);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  width: 60px;
+  
+}
+
+.pipe-animation {
+  animation: pipe-animation 3s infinite linear;
+}
+
+.mario {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 110px;
+}
+
+.jump {
+  animation: mario-jump 1s ease-out;
+}
+
+.clouds {
+  width: 550px;
+  position: absolute;
+
+}
+
+.clouds-animation {
+  animation: clouds-animation 5s infinite linear;
+}
+
+.game-over {
+  position: absolute;
+  top: 35%;
+  left: 42%;
+  display: none;
+}
+
+.start {
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  top: 50%;
+  left: 43.5%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.restart {
+  display: none;
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  top: 15%;
+  left: 43.5%;
+  cursor: pointer;
+  user-select: none;
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes mario-jump {
+  0% {
+    bottom: 0px;
+  }
+  40% {
+    bottom: 120px;
+  }
+  50% {
+    bottom: 120px;
+  }
+  60% {
+    bottom: 120px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+@keyframes clouds-animation {
+  from {
+    right: -40%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-over {
+    top: 35%;
+    left: 35%;
+  }
+
+  .start {
+    left: 33.5%;
+  }
+
+  .restart {
+    left: 39%;
+  }
+}
+
+@media (max-width: 425px) {
+  .game-over {
+    top: 30%;
+    left: 15%;
+  }
+
+  .start {
+    top: 20%;
+    left: 27%;
+  }
+
+  .restart {
+    left: 21.5%;
+  }
+}

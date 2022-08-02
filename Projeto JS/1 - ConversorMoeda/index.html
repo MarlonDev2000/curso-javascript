@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor USD - BRL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/dolar.png" type="image/x-icon">
+</head>
+<body>
+
+  <div class="container">
+    <div class="us-simbolo">
+      <h1 class="simbolo">$</h1>
+    </div>
+    <div class="conversor">
+      <div class="moeda estrangeira">
+        <div class="simboloDaMoeda">US$</div>
+        <input type="text" 
+        id="estrangeira" 
+        value="1,00" 
+        onclick="this.select()">
+      </div>
+      <div class="conversao"> vale </div>
+      <div class="moeda nacional">
+        <div class="simboloDaMoeda">R$</div>
+        <input type="text" 
+        id="nacional" 
+        value="1,00" 
+        onclick="this.select()">
+      </div>
+      <div class="conversao"> hoje </div>
+    </div>
+  </div>
+
+  <script src="js/alterarWidth.js"></script>
+  <script src="js/converter.js"></script>
+</body>
+</html>

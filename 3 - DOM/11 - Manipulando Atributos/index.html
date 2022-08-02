@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Javascript</title>
+  <style>
+    .imagem {
+      width: 350px;
+      height: 350px;
+    }
+  </style>
+</head>
+<body>
+  <img src="images/gato.webp" class="imagem" data-animal="Cachorro"><br>
+
+  <button onclick="trocarAnimal('cachorro.webp', 'Cachorro')">Cachorro</button>
+  <button onclick="trocarAnimal('gato.webp', 'Gato')">Gato</button>
+
+  <button onclick="pegarAnimal()">Qual é o animal?</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Javascript</title>
+  <style>
+    .texto {
+      width: 200px;
+      height: 1200px;
+      overflow: auto;
+      background-color: #CCCCCC;
+      padding: 20px;
+    }
+
+    .scroll-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 15px;
+      background-color: red;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      cursor: pointer;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="texto">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia blanditiis magnam magni, quas nemo numquam repellendus architecto? Labore error voluptatibus minima optio ullam expedita delectus quibusdam eaque nihil doloremque!    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia blanditiis magnam magni, quas nemo numquam repellendus architecto? Labore error voluptatibus minima optio ullam expedita delectus quibusdam eaque nihil doloremque!
+  </div>
+
+  <div class="scroll-button" onclick="subirTela()"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

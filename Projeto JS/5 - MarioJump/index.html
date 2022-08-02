@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Mario Jump</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  
+  <div class="game-board">
+    <img src="images/clouds.png" alt="clouds" class="clouds">
+    <img src="images/gameoverbackground.png" class="game-over">
+    <img src="images/mario1.gif" alt="mario" class="mario">
+    <img src="images/pipe.png" alt="pipe" class="pipe ">
+    <div class="start">
+      START
+    </div>
+    <div class="restart">
+      RESTART
+    </div>
+
+    <audio id="audioStart">
+      <source src="sounds/audio_game.mp3" type="audio.mpeg">
+    </audio>
+
+    <audio id="audioEnd" autoplay>
+      <source src="sounds/audio_game_end.mp3" type="audio.mpeg">
+    </audio>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F6F6;
+}
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #FFF;
+    margin: 20px 0;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.buscar #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+.buscar button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    background-color: #898DE4;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+.buscar button:hover {
+    background-color: #7276c0;
+}
+
+.resultado {
+    width: 300px;
+    display: block;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 14px;
+    background-color: #fff;
+}
+
+.titulo-area {
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 26px;
+    color: #898DE4;
+    font-weight: bold;
+}
+
+.subtitulo1, .subtitulo2 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #747474;
+}
+
+.info {
+    text-align: center;
+}
+
+.temp .temp-info {
+    color: #898DE4;
+    text-align: center;
+    font-size: 120px;
+    position: relative;
+}
+
+.temp-info-celcius {
+    font-size: 20px;
+    position: absolute;
+    top: 15%;
+}
+
+.temp-img {
+    width: 100px;
+}
+
+.temp-text {
+    display: block;
+    font-size: 16px;
+    color: #747474;
+    margin-bottom: 4%;
+}
+
+.vento {
+    color: #747474;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vento-titulo {
+    margin-right: 2%;
+}
+
+.vento-info {
+    margin-left: 2%;
+}
+
+
+.aviso {
+    color: #898DE4;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
